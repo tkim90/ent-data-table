@@ -1,11 +1,11 @@
-import {useState, useMemo, useEffect} from 'react';
-import { createPortal } from 'react-dom';
-import { css } from 'linaria';
-import { faker } from '@faker-js/faker';
+import {useEffect, useMemo, useState} from 'react';
+import {createPortal} from 'react-dom';
+import {faker} from '@faker-js/faker';
 
-import DataGrid, { SelectColumn, TextEditor, SelectCellFormatter } from 'react-data-grid';
-import type { Column, SortColumn } from 'react-data-grid';
-import { exportToCsv, exportToXlsx, exportToPdf } from '../src/exportUtils';
+import type {Column, SortColumn} from 'react-data-grid';
+import DataGrid, {SelectCellFormatter, SelectColumn, TextEditor} from 'react-data-grid';
+import {exportToCsv, exportToPdf, exportToXlsx} from '../src/exportUtils';
+import Header from "./Header";
 // import { textEditorClassname } from 'react-data-grid/editors/TextEditor';
 // import { TextEditor } from 'react-data-grid';
 // import { Direction } from 'react-data-grid';
@@ -391,6 +391,7 @@ export default function CommonFeatures() {
                     Export to PDF
                 </ExportButton>
             </div>
+            <Header />
             {gridElement}
         </>
     );
