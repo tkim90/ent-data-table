@@ -18,7 +18,7 @@
     "@mui/icons-material": "^5.5.0",
     "@mui/material": "^5.5.0",
     "linaria": "^2.3.1",
-    "next": "12.1.6",
+    "next": "^12.1.6",
     "react": "18.1.0",
     "react-data-grid": "^7.0.0-beta.13",
     "react-dom": "18.1.0"

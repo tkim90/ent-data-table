@@ -4,7 +4,7 @@ import {faker} from '@faker-js/faker';
 
 import type {Column, SortColumn} from 'react-data-grid';
 import DataGrid, {SelectCellFormatter, SelectColumn, TextEditor} from 'react-data-grid';
-import {exportToCsv, exportToPdf, exportToXlsx} from '../src/exportUtils';
+import {exportToCsv, exportToPdf, exportToXlsx} from '../exportUtils';
 import Header from "./Header";
 // import { textEditorClassname } from 'react-data-grid/editors/TextEditor';
 // import { TextEditor } from 'react-data-grid';
